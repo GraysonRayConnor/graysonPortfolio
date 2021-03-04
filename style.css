@@ -113,7 +113,8 @@ hr{
 
 .projectItm{
     text-align: center;
-    margin: 3rem 0 3rem 0;
+	margin: 3rem 0 3rem 0;
+	min-height: 50vh;
 }
 
 .projectItm img {
@@ -171,9 +172,12 @@ hr{
 
    .projectItm{
    width: 45%;
-
+   min-height: 40vh;
    }
 
+   .projectItm img {
+	   min-height: 15vh;
+   }
    .projectItm h4{
    	font-size: 3vw;
    }
@@ -229,7 +233,11 @@ hr{
 
    .projectItm{
    width: 30%;
+   min-height: 50vh;
+   }
 
+   .projectItm img {
+	   min-height: 22vh;
    }
 
    .projectItm h4{
