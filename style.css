@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
 html, body{
   width: 100%;
   height: 100vh;
@@ -146,6 +148,52 @@ hr{
 	font-size: 3vw;
 }
 
+#codeWarStats{
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	width: 75%;
+	margin: 0 auto;
+	/*border: 0.25px solid white;*/
+	border-radius: 15px;
+	padding: 10px;
+}
+
+#profilePic img {
+	width: 75%;
+	border-radius: 5px;
+}
+
+
+#codeWarsBadge img {
+	width: 100%;
+	position: relative;
+	right: 0.5rem;
+}
+
+
+#stats{
+	position: relative;
+	width: 95%;
+	right: 0.25rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	font-size: 2vw;
+	line-height: 15px;
+	font-family: 'Lato', sans-serif;
+}
+
+
+.statBox{
+	display: flex;
+	flex-direction: column;
+}
+
+.statName{
+	font-weight: bold;
+}
+
 
 @media (min-width: 750px){
 	#container{
@@ -210,6 +258,14 @@ hr{
    .projectItm p{
 	   
    	font-size: 1.5vw;
+   }
+
+   #codeWarStats{
+	   width: 65%;
+   }
+
+   #stats{
+	   line-height:30px;
    }
 }
 
@@ -278,11 +334,25 @@ hr{
 	width: 80%;
 	margin: 0 auto;
 }
+
+#stats {
+	font-size: 1.25vw;
+	line-height: 30px;
+}
 }
 
 @media (min-width: 1440px){
 	.projectItm{
 		margin-bottom: 10rem;
+		}
+
+		#stats {
+			font-size: 1vw;
+			line-height: 40px;
+		}
+
+		#codeWarStats{
+			width: 65%;
 		}
 }
 
