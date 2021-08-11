@@ -170,17 +170,19 @@ a:active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 10rem;
+  width: 75%;
+  padding-top: 7rem;
   margin: 0 auto;
 }
 
 .project {
-  margin: 7rem 5rem;
+  /*margin: 7rem 5rem;*/
+  margin-bottom: 5rem;
   width: 40rem;
 }
 
@@ -386,8 +388,17 @@ a:active {
     font-size: 4rem;
     width: 100%;
   }
+  .projects {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .project {
     width: 55rem;
+    margin: 3rem auto 7rem auto;
   }
   .project span {
     font-size: 3.5rem;

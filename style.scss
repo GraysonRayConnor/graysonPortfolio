@@ -146,14 +146,16 @@ a:active {
 
 .projects {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	flex-wrap: wrap;
-	padding: 10rem;
+	width: 75%;
+	padding-top: 7rem;
 	margin: 0 auto;
 }
 
 .project {
-	margin: 7rem 5rem;
+	/*margin: 7rem 5rem;*/
+	margin-bottom: 5rem;
 	width: 40rem;
 }
 
@@ -358,8 +360,13 @@ a:active {
 		width: 100%;
 	}
 
+	.projects {
+		flex-wrap: nowrap;
+		flex-direction: column;
+	}
 	.project {
 		width: 55rem;
+		margin: 3rem auto 7rem auto;
 	}
 
 	.project span {
