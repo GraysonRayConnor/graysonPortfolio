@@ -176,14 +176,14 @@ a:active {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 75%;
-  padding-top: 7rem;
+  padding-top: 10rem;
   margin: 0 auto;
 }
 
 .project {
   /*margin: 7rem 5rem;*/
   margin-bottom: 5rem;
-  width: 40rem;
+  width: 40%;
 }
 
 .project img {
@@ -297,7 +297,7 @@ a:active {
     font-size: 55%;
   }
   #header {
-    width: 80%;
+    /*width: 80%;*/
   }
 }
 
@@ -306,13 +306,13 @@ a:active {
     font-size: 50%;
   }
   #header {
-    width: 85%;
+    /*width: 85%;*/
   }
 }
 
 @media only screen and (max-width: 1024px) {
   #header {
-    width: 87%;
+    /*width: 87%;*/
   }
   .header-right button {
     font-size: 2rem;
@@ -332,7 +332,7 @@ a:active {
     font-size: 38%;
   }
   #header {
-    width: 90%;
+    /*width: 90%;*/
   }
 }
 
@@ -351,7 +351,7 @@ a:active {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 100%;
+    /*width: 100%;*/
     margin-top: 7rem;
   }
   .header-right {
@@ -359,6 +359,9 @@ a:active {
   }
   .header-left {
     width: 100%;
+  }
+  .header-left img {
+    max-width: 50%;
   }
   .info-container {
     margin-top: 7rem;
@@ -378,7 +381,7 @@ a:active {
   }
   .header-right button {
     font-size: 3rem;
-    width: 40rem;
+    width: 45%;
     height: 8rem;
   }
   .navbar {
@@ -397,8 +400,9 @@ a:active {
             flex-direction: column;
   }
   .project {
-    width: 55rem;
-    margin: 3rem auto 7rem auto;
+    width: 85%;
+    padding: 7rem 0;
+    margin: 0 auto;
   }
   .project span {
     font-size: 3.5rem;
