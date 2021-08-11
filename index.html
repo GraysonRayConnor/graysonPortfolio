@@ -1,143 +1,217 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>GRAYSON CONNOR</title>
-	<meta content="width=device-width, initial-scale=1" name="viewport" />
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-<div id="container">
-	<div id="heroTitle">
-	<h1>GRAYSON CONNOR</h1>
-	<h4>{FRONTEND WEB DEVELOPER}</h4>
-	</div>
-
-	<div id="heroBioContainer">
-		<h2 class="heroSectionTitle">BIO</h2>
-		<p>
-			
-			Hello! Thanks for visiting my website! As I’m sure you are aware, considering you’re on a website called graysonconnor.com, my name is Grayson Connor. I am 25 years old and I got into web development about 3 years ago. My journey in web development started when I joined a development bootcamp called Bloc.io. At Bloc, I learned the fundamentals of web development and about how deep the world of web dev goes. Soon after my time at Bloc, I was fortunate enough to land a job working at one the biggest tech companies around (not trying to name drop but it rhymes with shmUber). My time at this aforementioned tech giant was actually incredible. I was able to have a hands on role in many areas of the company (P.R., logistics, data analytics, etc.) and I got to see what goes into making a big machine like that function. Alas, after almost 2 years at Uber (ok there, I said it) 2020 happened. Like many others, COVID-19 claimed my job and I suddenly had an abundance of free time. 
-		</p>
-
-		<p>
-			That’s when I said to myself, “I should get back into coding!” You see, at Uber, we used some basic coding as a problem solving tool but, it was certainly not the main aspect of my role. So “getting back into coding” was really more like, “let’s start coding from scratch again.” That’s when stuff got real. I dove head first into teaching (and reteaching) myself everything I could about web development and coding in general.
-		</p>
-
-		<p>
-			That’s where I’m at now. I’m trying to learn and build as much as I can and I’m loving every minute of it. I’m looking forward to building more complex projects but, more importantly, projects that are truly useful in someones everyday life and work. I’ll keep this site updated with projects that I’ve completed and with projects I’m currently working on. If you’re interested in my skills or just want to chat, don’t hesitate to shoot me an email. Thanks for checking me out!
-		</p>
-	</div>
-
-	<hr>
-
-	<div id="heroContactContainer">
-		<h2 class="heroSectionTitle">CONTACT</h2>
-		<div id="heroContacts">
-			<a href="https://github.com/GraysonRayConnor">GITHUB</a>
-			<a href="https://www.linkedin.com/in/grayson-connor">LINKEDIN</a>
-			<a href="mailto:graysonrayconnor@gmail.com">EMAIL</a>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Grayson Connor</title>
+		<script
+			src="https://kit.fontawesome.com/b7f26ca48c.js"
+			crossorigin="anonymous"
+		></script>
+		<script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header id="header">
+			<div class="header-left">
+				<div class="profile-picture-container"></div>
+			</div>
+			<div class="header-right">
+				<div class="info-container">
+					<h1>Grayson Connor</h1>
+					<span>Frontend Web Developer</span>
+					<p>
+						Austin, TX based Web Developer that creates web applications and
+						responsive user interfaces.
+					</p>
+					<a href="assets/Grayson_Connor_Resume_2021.pdf" download>
+						<button class="cta-main">Download Resume</button>
+					</a>
+				</div>
+			</div>
+		</header>
+		<div class="navbar">
+			<button class="tab" data-switcher data-tab="1">About</button>
+			<button class="tab is-active" data-switcher data-tab="2">Projects</button>
+			<button class="tab" data-switcher data-tab="3">Socials</button>
 		</div>
-	</div>
-
-	<hr>
-	
-	<section id="codeWarsContainer">
-		<h2 class="heroSectionTitle">CODEWARS.COM</h2>
-		<div id="codeWarStats">
-			<div id="profilePic"><img src="assets/codeWarsProfilePic.png" alt="grayson profile picture"></div>
-			<div id="statsRight">
-			<div id="codeWarsBadge"><a target="_blank" href="https://www.codewars.com/users/TOOTS"><img src="https://www.codewars.com/users/TOOTS/badges/large" alt="codewars badge large" /></a></div>
-			<div id="stats">
-			<div class="statBox">
-			<div><span class="statName">Name:</span><span class="stat"> Grayson</span></div>
-			<div><span class="statName">Rank:</span><span class="stat"> 5kyu</span></div>
-			<div><span class="statName">Honor:</span><span class="stat"> 309</span></div>
-			</div>
-			<div class="statBox">
-			<div><span class="statName">Total Completed Kata:</span><span class="stat"> 69</span></div>
-			<span><a href="https://www.codewars.com/users/TOOTS/completed_solutions">View Grayson's Solutions</a></span>
-			</div>		
-			</div>
-		</div>
-		</div>
-	</section>
-
-	<hr>
-
-	<div id="heroProjectsContainer">
-		<h2 class="heroSectionTitle">PROJECTS</h2>
-		<div id="heroProjects">
-
-			<div class="projectItm">
-				<img src="assets/gPortBg.png">
-				<h4><a href="https://apollobaymusic.com">apollobaymusic</a></h4>
-				<div class="projectItmPara">
-					<p>Apollobaymusic.com is a memorial site that I made for a band that I used to be in. Were we the best band ever? That's not for me to say. But the answer is, yes, yes we were. This site features a music and video player and was built with HTML, CSS, JavaScript, and Bootstrap.</p>
+		<section data-page="2" class="projects-container page is-active">
+			<div class="projects">
+				<div class="project">
+					<a href="https://lucid-hugle-6588a9.netlify.app/" target="_blank">
+						<img src="assets/project-thumb-8.png" alt="" />
+						<span>MUSICTRACKS CHECKOUT PAGE</span>
+					</a>
+					<p>
+						This project was part of a coding challenge I was given for an
+						interview. This was my first time using CSS Grid and SASS and I
+						absolutely fell in love with those technologies while making it.
+					</p>
+				</div>
+				<div class="project">
+					<a href="https://www.kickflipsandkickstands.com/" target="_blank">
+						<img src="assets/project-thumb-2.png" alt="" />
+						<span>KICKFLIPSANDKICKSTANDS.COM</span>
+					</a>
+					<p>
+						Kickflipsandkickstands.com is a website that I made for a podcast
+						that I co-host with my friend Danny. This site features a podcast
+						player plugin and social media widgets.
+					</p>
+				</div>
+				<div class="project">
+					<a href="https://www.apollobaymusic.com/" target="_blank">
+						<img src="assets/project-thumb-1.png" alt="" />
+						<span>APOLLOBAYMUSIC.COM</span>
+					</a>
+					<p>
+						Apollobaymusic.com is a memorial site that I made for a band that I
+						used to be in. Were we the best band ever? That's not for me to say.
+						But the answer is, yes, yes we were. This site features a music and
+						video player and was built with HTML, CSS, JavaScript, and
+						Bootstrap.
+					</p>
+				</div>
+				<div class="project">
+					<a href="https://upbeat-mcnulty-5c5370.netlify.app/" target="_blank">
+						<img src="assets/project-thumb-4.png" alt="" />
+						<span>COLOR_CONVERTER V1</span>
+					</a>
+					<p>
+						The goal with this one was to make a tool for myself that I would
+						actually use day-to-day. Mission accomplished. This app converts
+						color codes into rgb, hsl, and hex code formats.
+					</p>
+				</div>
+				<div class="project">
+					<a href="https://weatherbygrayson.com/" target="_blank">
+						<img src="assets/project-thumb-3.png" alt="" />
+						<span>GRAYSON'S WEATHER APP</span>
+					</a>
+					<p>
+						A weather app!? Bet you've never heard of one of those before, have
+						you? This app uses the openweathermap api and the geolocation api to
+						bring you the current weather in your location as well as any city
+						in the world.
+					</p>
+				</div>
+				<div class="project">
+					<a href="https://jovial-pare-17ca56.netlify.app/" target="_blank">
+						<img src="assets/project-thumb-5.png" alt="" />
+						<span>PRICING COMPONENT</span>
+					</a>
+					<p>
+						This pricing component interface was part of a challenge on
+						frontendmentor.io. This pricing interface features a custom range
+						input slider and pricing toggle. I don't have a witty description
+						for this one. It just is what it is.
+					</p>
+				</div>
+				<div class="project">
+					<a href="https://quirky-mestorf-a9e06b.netlify.app/" target="_blank">
+						<img src="assets/project-thumb-6.png" alt="" />
+						<span>PREVIEW CARDS</span>
+					</a>
+					<p>
+						This tiny project was also a part of a frontendmentor.io challenge.
+						It's responsive, it's stylish, it's got info on different styles of
+						cars. What more could you ask for?
+					</p>
+				</div>
+				<div class="project">
+					<a href="https://vibrant-sammet-d11770.netlify.app/" target="_blank">
+						<img src="assets/project-thumb-7.png" alt="" />
+						<span>BLOCJAMS</span>
+					</a>
+					<p>
+						BlocJams is a music player that I made as part of my education at
+						Bloc.io. It's certainly no Spotify but, I learned an insane amount
+						while making it. Also, this was my first major project that I built
+						from start to finish.
+					</p>
 				</div>
 			</div>
-
-			<div class="projectItm">
-				<img src="assets/weather.png">
-				<h4><a href="https://weatherbygrayson.com">graysonsweatherapp</a></h4>
-				<div class="projectItmPara">
-					<p>A weather app!? Bet you've never heard of one of those before, have you? This app uses the openweathermap api and the geolocation api to bring you the current weather in your location as well as any city in the world. </p>
-				</div>
+		</section>
+		<section data-page="1" class="about-container page section">
+			<div class="about">
+				<p>
+					<span>Hello!</span> Thanks for visiting my website! As I’m sure you
+					are aware, considering you’re on a website called graysonconnor.com,
+					my name is Grayson Connor. I am 25 years old and I got into web
+					development about 3 years ago. My journey in web development started
+					when I joined a development bootcamp called Bloc.io. At Bloc, I
+					learned the fundamentals of web development and about how deep the
+					world of web dev goes. Soon after my time at Bloc, I was fortunate
+					enough to land a job working at one the biggest tech companies around
+					(not trying to name drop but it rhymes with shmUber). My time at this
+					aforementioned tech giant was actually incredible. I was able to have
+					a hands on role in many areas of the company (P.R., logistics, data
+					analytics, etc.) and I got to see what goes into making a big machine
+					like that function. Alas, after almost 2 years at Uber (ok there, I
+					said it) 2020 happened. Like many others, COVID-19 claimed my job and
+					I suddenly had an abundance of free time.
+				</p>
+				<br />
+				<p>
+					That’s when I said to myself, “I should get back into coding!” You
+					see, at Uber, we used some basic coding as a problem solving tool but,
+					it was certainly not the main aspect of my role. So “getting back into
+					coding” was really more like, “let’s start coding from scratch again.”
+					That’s when stuff got real. I dove head first into teaching (and
+					reteaching) myself everything I could about web development and coding
+					in general.
+				</p>
+				<br />
+				<p>
+					That’s where I’m at now. I’m trying to learn and build as much as I
+					can and I’m loving every minute of it. I’m looking forward to building
+					more complex projects but, more importantly, projects that are truly
+					useful in someones everyday life and work. I’ll keep this site updated
+					with projects that I’ve completed and with projects I’m currently
+					working on. If you’re interested in my skills or just want to chat,
+					don’t hesitate to shoot me an email. Thanks for checking me out!
+				</p>
 			</div>
-
-			<div class="projectItm">
-				<img src="assets/colorconverter.png">
-				<h4><a href="https://upbeat-mcnulty-5c5370.netlify.app">colorConverter v1</a></h4>
-				<div class="projectItmPara">
-					<p>The goal with this one was to make a tool for myself that I would actually use day-to-day. Mission accomplished. This app converts color codes into rgb, hsl, and hex code formats. </p>
-				</div>
+		</section>
+		<section data-page="3" class="social-container page section">
+			<div class="resumeBtn">
+				<a href="assets/Grayson_Connor_Resume_2021.pdf" download>
+					<button>DOWNLOAD RESUME</button>
+				</a>
 			</div>
-
-
-			<div class="projectItm">
-				<img src="assets/pricingcomponent.png">
-				<h4><a href="https://jovial-pare-17ca56.netlify.app">Pricing Component</a></h4>
-				<div class="projectItmPara">
-					<p>This pricing component interface was part of a challenge on frontendmentor.io. This pricing interface features a custom range input slider and pricing toggle. I don't have a witty description for this one. It just is what it is.</p>
-				</div>
+			<div class="socials">
+				<a class="icon-link" href="https://www.linkedin.com/in/grayson-connor">
+					<div class="icon-div">
+						<i class="fab fa-linkedin-in icon"></i>
+						<span>LINKEDIN</span>
+					</div>
+				</a>
+				<a class="icon-link" href="https://github.com/GraysonRayConnor">
+					<div class="icon-div">
+						<i class="fab fa-github icon"></i>
+						<span>GITHUB</span>
+					</div>
+				</a>
+				<a class="icon-link" href="mailto:graysonrayconnor@gmail.com">
+					<div class="icon-div">
+						<i class="far fa-envelope icon"></i>
+						<span>EMAIL</span>
+					</div>
+				</a>
+				<a class="icon-link" href="https://www.codewars.com/users/TOOTS">
+					<div class="icon-div">
+						<img
+							id="cwIcon"
+							class="icon"
+							src="assets/codewars-icon.png"
+							alt=""
+						/>
+						<span>CODEWARS</span>
+					</div>
+				</a>
 			</div>
-
-			<div class="projectItm">
-				<img src="assets/3columnpreview.png">
-				<h4><a href="https://quirky-mestorf-a9e06b.netlify.app">Preview Cards</a></h4>
-				<div class="projectItmPara">
-					<p>This tiny project was also a part of a frontendmentor.io challenge. It's responsive, it's stylish, it's got info on different styles of cars. What more could you ask for?</p>
-				</div>
-			</div>
-
-			<div class="projectItm">
-				<img src="assets/ollie.png">
-				<h4><a href="https://youthful-wright-e0a21c.netlify.app">ollie v1</a></h4>
-				<div class="projectItmPara">
-					<p>Ready to shred!? Well doesn't matter because you're about to. Ollie v1 is a simple javascript game that let's you test your reflexes and overall gnarliness. Version 2 is coming soon and will feature cleaner and more well rounded gameplay.</p>
-				</div>
-			</div>
-
-			<div class="projectItm">
-				<img src="assets/blocjams.png">
-				<h4><a href="https://vibrant-sammet-d11770.netlify.app">blocjams</a></h4>
-				<div class="projectItmPara">
-					<p>BlocJams is a music player that I made as part of my education at Bloc.io. It's certainly no Spotify but, I learned an insane amount while making it. Also, this was my first major project that I built from start to finish. </p>
-				</div>
-			</div>
-
-			<div class="projectItm">
-				<img src="assets/xmasCountdown.png">
-				<h4><a href=" https://silly-clarke-96177c.netlify.app/">christmascountdown</a></h4>
-				<div class="projectItmPara">
-					<p>The name says it all. This application simply counts down the days, hours, minutes, and seconds until Santa Claus rises from his icey slumber to B&E homes around the world.</p>
-				</div>
-			</div>
-		</div>
-
-	</div>
-</div>
-<script type="text/javascript" src="script.js"></script>
-</body>
+		</section>
+		<script type="text/javascript" src="script.js"></script>
+	</body>
 </html>
